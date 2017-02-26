@@ -34,24 +34,21 @@ h2 {
 /* Get rid of borders on Bootstrap table*/
 .table {
     border-bottom:0px !important;
-    width: 40%;
-    margin: 0 auto;
+    text-align: center;
 }
-
 .table th, .table td {
-    border: 0px !important;
+    border: 1px !important;
 }
 .fixed-table-container {
     border:0px !important;
 }
-/* Get rid of borders on Bootstrap table end*/
+/* Get rid of borders on Bootstrap table*/
 
-.btn {
-  background-color: #28605E;
-  border: 0 none;
-  width: 20%;
+input[type=radio]:not(old){
+  background-color: #D8D8D8;
+  width: 1em;
 }
 
-.btn:hover {
-  background-color: #1E4F4E;
+.price {
+  text-align: right;
 }
