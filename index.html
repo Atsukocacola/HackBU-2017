@@ -32,13 +32,21 @@
     <div class="header-wrapper">
       <div class="container-fluid" id="landing">
         <div class="animated fadeInUp">
-          <div class="row" style="padding-top: 20%">
+          <div class="row" style="padding-top: 5%">
               <div class=".col-lg-12">
-                    <h1 style="font-size: 60px;">LifeStock</h1>
-                    <p style="font-size: 25px; font-weight: 400">Donate stock to charity</p>
+                    <h1 style="font-size: 90px;">LifeStock</h1>
+                    <p style="padding-bottom: 10%; font-size: 25px; font-weight: 400">Donate stock to charity</p>
+                    <img style="width: 35%" src="img/cow_coin.png">
               </div>
           </div>
         </div>
+
+        <!-- <div class="row">
+            <div class=".col-lg-12">
+                <img style="width: 100%" src="img/grass.png">
+            </div>
+        </div> -->
+
       </div>
     </div>
 
@@ -54,7 +62,7 @@
 
             <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
               <h3>HOW LIFESTOCK WORKS</h3>
-              </p>We’ve partnered up with top firms willing to sell their stock at a 10% reduced rate for charities. Other firms give the option to wave their brokerage fee. Every time you make a purchase, we’ll round it up to the nearest dollar. Watch your spare change accumulate, invest in your favorite company’s stock, and donate to a charity of your choice. Additionally, since you’re trying to improve society, you can avoid paying capital gains taxes on the stock gains. Spend away!</p>
+              </p>We’ve partnered up with top firms willing to sell their stock for charities. Since you’re trying to improve society, you can avoid paying capital gains taxes on the stock gains and have the option to wave the brokerage fee. Every time you make a purchase, we’ll round it up to the nearest dollar. Watch your spare change accumulate, invest in your favorite company’s stock, and donate to a charity of your choice. Spend away!</p>
             </div>
 
         </div>
@@ -82,60 +90,73 @@
 
         <div class="table-responsive" style="text-align: left;">
           <table class="table">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Stock Price</th>
+                    <th>After Discount</th>
+                </tr>
+            </thead>
+
             <tbody>
               <tr>
                 <td>
                   <div class="radio">
                       <label>
-                          <input type="radio" name="company" value="citi">CITI
+                          <input type="radio" name="company" value="citi">{{stock[0].company}}
                       </label>
                   </div>
                 </td>
-                <td class="stock-price">{{citiS}}</td>
+                <td class="stock-price">${{stock[0].price}}</td>
+                <td class="discount">${{discount[0].price}}</td>
               </tr>
 
               <tr>
                 <td>
                   <div class="radio">
                       <label>
-                          <input type="radio" name="company" value="lockhead-martin">LOCKHEAD MARTIN
+                          <input type="radio" name="company" value="lockhead-martin">{{stock[3].company}}
                       </label>
                   </div>
                 </td>
-                <td class="stock-price">{{lockS}}</td>
+                <td class="stock-price">${{stock[3].price}}</td>
+                <td class="discount">${{discount[3].price}}</td>
               </tr>
 
               <tr>
                 <td>
                   <div class="radio">
                       <label>
-                          <input type="radio" name="company" value="general-electric">GENERAL ELECTRIC
+                          <input type="radio" name="company" value="general-electric">{{stock[4].company}}
                       </label>
                   </div>
                 </td>
-                <td class="stock-price">{{geS}}</td>
+                <td class="stock-price">${{stock[4].price}}</td>
+                <td class="discount">${{discount[4].price}}</td>
               </tr>
 
               <tr>
                 <td>
                   <div class="radio">
                       <label>
-                          <input type="radio" name="company" value="viacom">VIACOM
+                          <input type="radio" name="company" value="viacom">{{stock[2].company}}
                       </label>
                   </div>
                 </td>
-                <td class="stock-price">{{viaS}}</td>
+                <td class="stock-price">${{stock[2].price}}</td>
+                <td class="discount">${{discount[2].price}}</td>
               </tr>
 
               <tr>
                 <td>
                   <div class="radio">
                       <label>
-                          <input type="radio" name="company" value="bae-systems">BAE SYSTEMS
+                          <input type="radio" name="company" value="bae-systems">{{stock[1].company}}
                       </label>
                   </div>
                 </td>
-                <td class="stock-price">{{baeS}}</td>
+                <td class="stock-price">${{stock[1].price}}</td>
+                <td class="discount">${{discount[1].price}}</td>
               </tr>
 
           </tbody>
@@ -151,6 +172,10 @@
               <h2>CHARITIES</h2>
           </div>
       </div>
+
+
+      <div class="row">
+      </div class=".col-lg-6 .col-lg-offset-3">
 
       <div class="table-responsive" style="text-align: left;">
         <table class="table">
@@ -188,8 +213,10 @@
           </tbody>
         </table>
       </div>
+    </div class=".col-lg-6 .col-lg-offset-3">
+    </div> <!-- row end-->
+    </div><!--container end -->
     </div>
-    </div> <!--container end -->
 
     <div class="container" style="padding-top: 2%; padding-bottom: 3%">
         <div class="row">
