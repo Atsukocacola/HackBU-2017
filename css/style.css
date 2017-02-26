@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: #5A5A5A;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-weight: 600;
+  color: #71C772;
+  font-size: 20px;
+}
+
+#accumulated {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #F2F9F2;
+}
+
+#price {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+#stock-options {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/* Get rid of borders on Bootstrap table*/
+.table {
+    border-bottom:0px !important;
+    text-align: center;
+}
+.table th, .table td {
+    border: 1px !important;
+}
+.fixed-table-container {
+    border:0px !important;
+}
+/* Get rid of borders on Bootstrap table*/
+
+input[type=radio]:not(old){
+  background-color: #D8D8D8;
+  width: 1em;
+}
+
+.price {
+  text-align: right;
+}
